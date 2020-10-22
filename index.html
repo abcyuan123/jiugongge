@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九宫格</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .wrap{
+            width: 320px;
+            height: 320px;
+            background:#ccc;
+        }
+
+        .wrap span {
+            position: relative;
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: lightcoral;
+            margin: 3.2px;
+            border-radius: 6px;
+        }
+
+        .btn {
+            width: 320px;
+            height: 50px;
+            background: #008c8c;
+            border:3px solid #ccc;
+            box-sizing: border-box;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            line-height: 45px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="wrap">
+            <span class="box"></span>
+            <span class="box"></span>
+            <span class="box"></span>
+            <span class="box"></span>
+            <span class="box"></span>
+            <span class="box"></span>
+            <span class="box"></span>
+            <span class="box"></span>
+            <span class="box"></span>
+        </div>
+        <div class="btn btn1" onclick="start()">开始闪</div>
+        <div class="btn btn2" onclick ="stop()">停止闪</div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
